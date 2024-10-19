@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://dm8np3xfe4kng"]
+
+[ext_resource type="Shader" path="res://Challenge/challenge.gdshader" id="1_4agdo"]
+[ext_resource type="Texture2D" uid="uid://crxb4flkkfpsn" path="res://icon.svg" id="1_6lkti"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qa6o4"]
+shader = ExtResource("1_4agdo")
+shader_parameter/custom_color = Color(0.536054, 0.0182747, 4.81308e-08, 1)
+shader_parameter/center = Vector2(0.5, 0.5)
+shader_parameter/radius = 0.443
+shader_parameter/width = 0.3
+
+[node name="Challenge" type="Sprite2D"]
+material = SubResource("ShaderMaterial_qa6o4")
+texture = ExtResource("1_6lkti")
